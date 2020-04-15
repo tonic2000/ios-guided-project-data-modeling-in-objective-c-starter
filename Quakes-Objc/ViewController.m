@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "LSILog.h"
+#import "LSIFirstResponder.h"
+// if Error : 'LSILog.h' file not found
+// Sometimes in Xcode 11, the complier won't see our files if they are in folders
+// Command + Shift + K : Clean
+// Build: Command + B
+// Build Unit Test: Command + Shift + U
 
-@interface ViewController ()
+@interface ViewController () 
 
 @end
 
@@ -17,6 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"Hey clean output!");
+
 }
 
 
